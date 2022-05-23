@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Programmer Info Page</title>
+</head>
+<body>
+	<h1>Programmer's info</h1>
+	
+	<h2 th:text="${msg}"></h2>
+	
+	<!-- get data from model through the controller -->
+	<h3 th:text="${programmer.pId}"></h3>
+	<h3 th:text="${programmer.pName}"></h3>
+	<h3 th:text="${programmer.pLang}"></h3>
+	
+	<h3 th:text="${programmer}"></h3>
+</body>
+</html>
